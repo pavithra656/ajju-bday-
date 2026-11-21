@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070c19">
+<title>For AJJU ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="gate" class="gate">
+  <canvas id="gateFx" class="fx-canvas"></canvas>
+  <div class="gate-box">
+    <div class="gate-eyebrow">PRIVATE BIRTHDAY SURPRISE</div>
+    <div class="gate-sub">made with love for AJJU ♡</div>
+    <div class="lock"><span>💛</span></div>
+    <h1>A Little Secret</h1>
+    <p>Enter the little secret password to continue.</p>
+    <form id="passwordForm">
+      <input id="passwordInput" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Enter password" aria-label="Password">
+      <button type="submit">UNLOCK ♡</button>
+    </form>
+    <div id="gateStatus" class="gate-status" role="status" aria-live="polite"></div>
+  </div>
+</div>
+
+<main id="app" aria-label="AJJU birthday story">
+  <!-- living romantic background -->
+  <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-c" aria-hidden="true"></div>
+  <canvas id="appFx" class="fx-canvas" aria-hidden="true"></canvas>
+
+  <div class="topbar">
+    <div class="story-title">For AJJU ♡</div>
+    <div class="dots" id="dots"></div>
+    <div class="hint">TAP TO CONTINUE</div>
+  </div>
+
+  <!-- PAGE 0 : BIRTHDAY -->
+  <section class="page hero-page" data-page="0">
+    <div class="hero-scene" aria-hidden="true">
+      <svg class="hero-heart" viewBox="0 0 100 100">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffe29f"/>
+            <stop offset=".5" stop-color="#ffca4f"/>
+            <stop offset="1" stop-color="#ffedc2"/>
+          </linearGradient>
+        </defs>
+        <path pathLength="1" d="M50 88 C10 58 2 30 24 16 C38 8 48 16 50 24 C52 16 62 8 76 16 C98 30 90 58 50 88 Z"/>
+      </svg>
+      <div class="garland" id="garland">
+        <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+          <path d="M0,0 Q50,80 100,0 Q150,80 200,0 Q250,80 300,0" vector-effect="non-scaling-stroke"/>
+        </svg>
+      </div>
+      <i class="shoot s1"></i><i class="shoot s2"></i><i class="shoot s3"></i>
+      <svg class="hills hills-back" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0,30 L0,14 C10,6 18,8 28,13 C38,18 46,9 58,7 C70,5 80,12 90,10 C95,9 98,10 100,11 L100,30 Z"/></svg>
+      <div class="city" id="city"></div>
+      <svg class="hills hills-front" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0,30 L0,20 C12,14 22,18 34,21 C46,24 56,16 70,16 C82,16 92,21 100,19 L100,30 Z"/></svg>
+    </div>
+    <div class="hero-content">
+      <span class="eyebrow rv">TODAY IS YOUR DAY</span>
+      <h1 aria-label="Happiest Birthday"><span class="split">HAPPIEST</span><br><em class="split">BIRTHDAY</em></h1>
+      <h2 class="name rv"><span class="shine">AJJU</span> <span class="beat">♡</span></h2>
+      <p class="rv">Today is all about you<br>and how special you are to me.</p>
+      <button class="primary next rv">OPEN IT ♡</button>
+    </div>
+  </section>
+
+  <!-- PAGE 1 : LETTER -->
+  <section class="page letter-page" data-page="1">
+    <div class="panel letter-panel">
+      <span class="eyebrow rv">A SECRET FOR YOU 💌</span>
+      <h2 class="rv">Hey AJJU,</h2>
+      <div class="letter-scroll rv" tabindex="0">
+        <p>Thank you for crossing paths with me. 🥹 You really are the best person I have ever met.</p>
+        <p>You made me smile over the little things. You made me feel like living a little longer. 🫶</p>
+        <p>You encouraged me to do the things everyone said I couldn't. You always supported me and stayed with me — thank you for that. ❤️</p>
+        <p>And I'm sorry if I ever hurt you because of how I reacted to some of your actions. I always wanted attention, I wanted to be loved... but I was expecting a lot from you, so I just stopped having hopes, and whatever expectations I had of you.</p>
+        <p>But still, at the end of the day, all I want is for you to be happy. Work hard, succeed, and live the happiest life you've always wanted. ✨</p>
+        <p>I know what you've been through, and you have a family to look after. I don't know who will be there for you, but I will always be in your corner, supporting you — even if you fail.</p>
+        <p>All I want is for you to be happy and successful. Keep smiling, and never ever give up. You have so much to do in life... 🌟</p>
+        <p>And if you ever feel alone, or tired of something — I'm always there for you. No matter what, even if I don't talk, I'm there. Anytime. 💛</p>
+        <p><strong>Happy Birthday, AJJU. ❤️</strong></p>
+      </div>
+      <div class="panel-actions rv"><button class="primary next">ONE LAST THING →</button></div>
+    </div>
+  </section>
+
+  <!-- PAGE 2 : QUESTION -->
+  <section class="page question-page" data-page="2">
+    <div class="question-content">
+      <div class="doll-frame rv"><img src="bear-clean.jpg" alt="Cute bear"></div>
+      <span class="eyebrow rv">BE HONEST... 👀</span>
+      <h2 class="rv">Do you<br><em>love me?</em></h2>
+      <div class="answers rv" id="answers">
+        <button id="yesBtn" class="answer yes">YES 💛</button>
+        <button id="noBtn" class="answer no">NO ❤️</button>
+      </div>
+      <p class="question-note" id="questionNote">No escaping this one 😌</p>
+      <img id="tapSticker" class="tap-sticker" alt="" src="" style="display:none;">
+    </div>
+  </section>
+
+  <!-- PAGE 3 : YES -->
+  <section class="page reaction-page" data-page="3">
+    <div class="reaction-content">
+      <div class="heart-rain rv" aria-hidden="true">♥ ♡ ♥ ♡ ♥</div>
+      <div class="sticker-frame rv"><img src="sticker-hug.webp" alt="Bears hugging"></div>
+      <h2 class="rv">YAYYY! I KNEW IT! 🥹❤️</h2>
+      <p class="rv">You just made my day the best one ever. Don't take that question too seriously — it was just a tiny birthday surprise. 🫶</p>
+      <button id="goFinalFromYes" class="primary next rv" data-target="5">ONE LAST SURPRISE 🎂 →</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 : NO -->
+  <section class="page reaction-page" data-page="4">
+    <div class="reaction-content">
+      <div class="sticker-frame rv"><img src="sticker-no3.webp" alt="Annoyed panda and bear"></div>
+      <h2 class="rv">AWWW SERIOUSLY? 😭</h2>
+      <p class="rv">HOW DARE YOUUU 😂😭 It was just for fun! You really didn't have to hurt my feelings on my own website.</p>
+      <div class="stack-actions rv">
+        <button id="tryAgain" class="primary">TRY AGAIN ♡</button>
+        <button id="goFinalFromNo" class="text-btn next">okay, bye bye →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 5 : MAKE A WISH (finale) -->
+  <section class="page final-page" data-page="5">
+    <div class="final-content">
+      <span class="eyebrow rv" id="wishEyebrow">MAKE A WISH 🌠</span>
+      <h2 class="rv" id="wishTitle">Close your eyes,<br><em>make a wish...</em></h2>
+      <div class="cake rv" id="cake" role="img" aria-label="Birthday cake with candles">
+        <div class="candles">
+          <div class="candle"><i class="flame"></i></div>
+          <div class="candle"><i class="flame"></i></div>
+          <div class="candle"><i class="flame"></i></div>
+          <div class="candle"><i class="flame"></i></div>
+          <div class="candle"><i class="flame"></i></div>
+        </div>
+        <div class="tier t2"></div>
+        <div class="tier t1"></div>
+        <div class="plate"></div>
+      </div>
+      <button id="blowBtn" class="primary rv">BLOW THE CANDLES 🕯️</button>
+      <div class="wish-msg" id="wishMsg">
+        <p class="wish-big">Whatever you wished for, AJJU,<br><strong>I hope it comes true. ✨</strong></p>
+        <p>You deserve every beautiful thing this world has — today, and every day after. 🫶</p>
+        <div class="bye">Happy Birthday, AJJU ❤️</div>
+        <button id="exitBtn" class="primary" style="margin-top:22px;">Close ♡</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="closedScreen" class="closed-screen">
+  <div>💛</div>
+  <p>You can close this tab now.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
